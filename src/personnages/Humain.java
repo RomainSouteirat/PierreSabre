@@ -2,7 +2,7 @@ package personnages;
 
 public class Humain {
 	protected int argent;
-	private String nom;
+	protected String nom;
 	protected String boissonFav;
 	
 	public Humain(int argent, String nom, String boissonFav) {
@@ -28,7 +28,7 @@ public class Humain {
 		return texte;
 	}
 	
-	public void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println(prendreParole() + texte);
 		}
 	
